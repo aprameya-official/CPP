@@ -1,0 +1,11 @@
+"Byte addressable" refers to a memory architecture in which individual bytes (8 bits) within the memory are individually addressable. In a byte-addressable memory system, each byte has a unique memory address, making it possible to read from or write to any individual byte in memory using its specific address.
+
+This contrasts with bit-addressable memory, where the smallest addressable unit is a single bit. In most practical computer systems, memory is organized into bytes or larger units, making byte-addressable memory more common and convenient for tasks like data storage, manipulation, and retrieval.
+
+In byte-addressable memory:
+
+1. Each byte has its own unique address, typically represented as a sequence of binary digits (bits).
+2. Data can be stored and retrieved at the granularity of individual bytes.
+3. Memory operations, such as reading, writing, and copying, are typically performed on whole bytes.
+
+Byte addressability is a fundamental characteristic of modern computer memory systems, including RAM (Random Access Memory) and storage devices like hard drives and solid-state drives (SSDs). It allows for efficient data handling and manipulation in byte-sized chunks, which is essential for most computer programs and data storage applications.
