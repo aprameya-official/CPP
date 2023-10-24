@@ -1,8 +1,14 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-int main(){
+
+int main() {
     char ch;
-    for(ch='z';ch>='a';ch--){
-        cout<<ch<<endl;
+
+    // Loop to print lowercase alphabet letters from 'z' down to 'a'
+    for (ch = 'z'; ch >= 'a'; ch--) {
+        // Output: Print the current character followed by a newline
+        cout << ch << endl;
     }
+
+    return 0;
 }

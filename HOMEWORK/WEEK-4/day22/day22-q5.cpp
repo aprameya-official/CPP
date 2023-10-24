@@ -21,15 +21,15 @@ int main() {
         cin >> arr[i];
     }
 
-    int firstLargest = INT_MIN;
-    int secondLargest = INT_MIN;
+    int firstLargest = INT_MIN; // Initialize the first largest to the smallest possible integer
+    int secondLargest = INT_MIN; // Initialize the second largest to the smallest possible integer
 
     for (int i = 0; i < n; i++) {
         if (arr[i] > firstLargest) {
-            secondLargest = firstLargest;
-            firstLargest = arr[i];
+            secondLargest = firstLargest; // Update the second largest
+            firstLargest = arr[i]; // Update the first largest
         } else if (arr[i] > secondLargest && arr[i] != firstLargest) {
-            secondLargest = arr[i];
+            secondLargest = arr[i]; // Update the second largest
         }
     }
 

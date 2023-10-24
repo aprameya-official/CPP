@@ -21,17 +21,17 @@ int main() {
         cin >> arr[i];
     }
 
-    int firstLargest = INT_MIN;
-    int secondLargest = INT_MIN;
-    int thirdLargest = INT_MIN;
+    int firstLargest = INT_MIN; // Initialize the first largest to the smallest possible integer
+    int secondLargest = INT_MIN; // Initialize the second largest to the smallest possible integer
+    int thirdLargest = INT_MIN; // Initialize the third largest to the smallest possible integer
 
     for (int i = 0; i < n; i++) {
         if (arr[i] > firstLargest) {
-            thirdLargest=secondLargest;
-            secondLargest = firstLargest;
-            firstLargest = arr[i];
+            thirdLargest = secondLargest; // Update the third largest
+            secondLargest = firstLargest; // Update the second largest
+            firstLargest = arr[i]; // Update the first largest
         } else if (arr[i] > thirdLargest && arr[i] != firstLargest && arr[i] != secondLargest) {
-            thirdLargest = arr[i];
+            thirdLargest = arr[i]; // Update the third largest
         }
     }
 

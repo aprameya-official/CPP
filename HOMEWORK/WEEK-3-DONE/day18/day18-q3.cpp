@@ -1,16 +1,30 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-void swapthree(int &a,int &b,int &c){
-    int temp=b;int temp2=c;
-    b=a;
-    c=temp;
-    a=temp2;
-    cout<<a<<" "<<b<<" "<<c;
+
+// Function to swap the values of three variables
+void swapthree(int &a, int &b, int &c) {
+    // Temporary variables to hold the values
+    int temp_b = b;
+    int temp_c = c;
+
+    // Swap the values of a, b, and c
+    b = a;
+    c = temp_b;
+    a = temp_c;
+
+    // Output the swapped values
+    cout << "Swapped values: " << a << " " << b << " " << c << endl;
 }
-int main()
-{  int a,b,c;
-  cout<<"enter the vales for a,b&c";
-  cin>>a>>b>>c;
-  swapthree(a,b,c);
-  return 0;
+
+int main() {
+    int a, b, c;
+
+    // Input values for a, b, and c
+    cout << "Enter the values for a, b, and c: ";
+    cin >> a >> b >> c;
+
+    // Call the swapthree function to swap the values
+    swapthree(a, b, c);
+
+    return 0;
 }
