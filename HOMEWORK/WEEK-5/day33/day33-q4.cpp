@@ -40,7 +40,8 @@ using namespace std;
         return ans; // Return the minimum eating speed.
     }
 
-    int main() {
+
+ int main() {
     // Create a vector of piles and specify the maximum hours 'h'.
     vector<int> piles = {3, 6, 7, 11};
     int h = 8;
